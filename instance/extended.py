@@ -11,7 +11,7 @@ class AllCaps(Component):
 
 class AllCapsContainer(containers.DeclarativeContainer):
     config = providers.Configuration("config")
-    component = providers.Factory(AllCaps, param=Container.config.param)
+    component = providers.Factory(AllCaps, param=config.param)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ from dependency_injector import containers, providers
 class Component:
     def __init__(self, param):
         if param is None:
-            raise ValueError
+            raise ValueError()
         self.param = param
 
     def __str__(self):
